@@ -1,2 +1,5 @@
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
-alias vi='/usr/bin/nvim'
+# Dotfiles in $HOME using bare git repo
+alias config='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+
+# If neovim is available substitute vim with nvim
+type nvim > /dev/null 2/&1 && alias vi=nvim
