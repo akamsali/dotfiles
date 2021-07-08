@@ -9,8 +9,14 @@ My Dotfiles using bare git repository
    git clone --bare https://github.com/mishra-sid/dotfiles.git $HOME/dotfiles 
 ```
 
-2. Add to Zsh/Bash
+2. Execute the following commands: 
 ```
-   source ~/.aliases 
+   alias config='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+   echo "dotfiles" >> .gitignore
+   mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
+   config checkout
+   config config --local status.showUntrackedFiles no
 ```
 
