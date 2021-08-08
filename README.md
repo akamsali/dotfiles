@@ -7,7 +7,7 @@ On a new machine, to setup dotfiles do the following:
 
 1. Clone dotfiles repo to home directory
 ```
-   git clone --bare https://github.com/mishra-sid/dotfiles.git $HOME/dotfiles 
+   git clone --bare https://github.com/akamsali/dotfiles.git $HOME/dotfiles 
 ```
 
 2. Execute the following commands: 
