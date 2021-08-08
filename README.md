@@ -1,6 +1,6 @@
 # dotfiles
 
-My Dotfiles using bare git repository
+My Dotfiles using bare git repository: https://www.atlassian.com/git/tutorials/dotfiles
 
 ## Usage Instructions
 On a new machine, to setup dotfiles do the following:
