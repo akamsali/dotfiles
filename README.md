@@ -21,3 +21,8 @@ On a new machine, to setup dotfiles do the following:
    config config --local status.showUntrackedFiles no
 ```
 
+3. Add a shell be installing Oh-my-Zsh and add aliases to Zsh:
+```
+   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   echo "source ~/.aliases" >> ~/.zshrc
+```
